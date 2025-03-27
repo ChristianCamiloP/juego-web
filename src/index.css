@@ -23,11 +23,12 @@ a:hover {
 }
 
 body {
+  background-color: #000;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
 }
 
 h1 {
@@ -66,3 +67,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
