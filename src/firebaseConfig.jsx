@@ -1,6 +1,8 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+import { getFirestore } from "firebase/firestore";
 
+// Configuración de Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyAphrLdNrDnOyFJwY6dVD8oJTTYA-DXAME",
   authDomain: "juego-db.firebaseapp.com",
@@ -15,5 +17,8 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-// Exportación por defecto
+// Inicializa Firestore
+const db = getFirestore(app);
+
+export { db };  // Exporta la instancia de Firestore
 export default firebaseConfig;
